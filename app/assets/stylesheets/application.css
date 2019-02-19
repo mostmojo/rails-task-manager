@@ -15,7 +15,15 @@
  */
 
 body {
-	font-size: 22px;
-	font-family: Monospace;
-	background-color: lightgrey;
+  font-size: 22px;
+  font-family: Monospace;
+  background-color: lightgrey;
+  padding: 20px;
+  line-height: 30px;
 }
+
+h1 {
+  font-size: 35px;
+  font-family: Monospace;
+}
+
