@@ -8,8 +8,7 @@
 	      	<i class="far fa-square"></i>
 	  	<% end %>
 	  	<%= link_to task.title, task_path(task) %>
+	  	<%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+
   	</div>
 <% end %>
-
-
-
