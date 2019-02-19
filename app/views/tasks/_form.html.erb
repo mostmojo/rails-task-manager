@@ -1,12 +1,13 @@
 <%= form_for(task) do |f| %>
-  <%= f.label :title %>
+  <%= f.label :title, "Task title" %>
   <%= f.text_field :title %>
 
-  <%= f.label :details %>
+  <%= f.label :details, "Details" %>
   <%= f.text_field :details %>
 
-  <%= f.label :completed %>
+  <%= f.label :completed, "Completion Status" %>
   <%= f.text_field :completed %>
 
   <%= f.submit %>
 <% end %>
+
