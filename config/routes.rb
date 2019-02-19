@@ -4,17 +4,17 @@ Rails.application.routes.draw do
   # Read all tasks
   get 'tasks', to: 'tasks#index'
 
-  # # Read the details of one task
-  # get 'tasks/:id', to: 'tasks#show'
+  # Read the details of one task
+  get 'tasks/:id', to: 'tasks#show'
 
-  # # create a task 2 REQUESTS
-  # get 'tasks/new', to: 'tasks#new'
-  # post 'tasks', to: 'tasks#create'
+  # create a task 2 REQUESTS
+  get 'tasks/new', to: 'tasks#new'
+  post 'tasks', to: 'tasks#create'
 
-  # # update a task
-  # get 'tasks/:id/edit', to: 'tasks#edit'
-  # patch 'tasks/:id', to: 'tasks#update'
+  # update a task
+  get 'tasks/:id/edit', to: 'tasks#edit'
+  patch 'tasks/:id', to: 'tasks#update'
 
-  # # delete a task
-  # delete 'tasks/:id', to: 'tasks#destroy'
+  # delete a task
+  delete 'tasks/:id', to: 'tasks#destroy'
 end
