@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   # Read all tasks
   get 'tasks', to: 'tasks#index'
 
-  # Read the details of one task
-  get 'tasks/:id', to: 'tasks#show'
-
   # create a task 2 REQUESTS
   get 'tasks/new', to: 'tasks#new'
   post 'tasks', to: 'tasks#create'
+
+  # Read the details of one task
+  get 'task/:id', to: 'tasks#show', as: :task
 
   # update a task
   get 'tasks/:id/edit', to: 'tasks#edit'
