@@ -12,9 +12,9 @@ Rails.application.routes.draw do
   get 'task/:id', to: 'tasks#show', as: :task
 
   # update a task
-  get 'tasks/:id/edit', to: 'tasks#edit'
-  patch 'tasks/:id', to: 'tasks#update'
+  get 'task/:id/edit', to: 'tasks#edit'
+  patch 'task/:id', to: 'tasks#update'
 
   # delete a task
-  delete 'tasks/:id', to: 'tasks#destroy'
+  delete 'task/:id', to: 'tasks#destroy'
 end
